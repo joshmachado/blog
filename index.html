@@ -1,49 +1,37 @@
 ---
 layout: default
-title: Blog
+title: Home
 ---
 
 <div class="posts">
   {% for post in paginator.posts %}
-  <article class="post">
+  <div class="post">
     <h1 class="post-title">
-      <a href="{{ site.baseurl }}{{ post.url }}">
+      <a href="{{ post.url | absolute_url }}">
         {{ post.title }}
       </a>
     </h1>
 
-    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
+    <span class="post-date">{{ post.date | date_to_string }}</span>
 
     {{ post.content }}
-  </article>
+  </div>
   {% endfor %}
 </div>
 
 <div class="pagination">
   {% if paginator.next_page %}
-    <a class="pagination-item" href="{{ paginator.next_page_path | prepend: site.baseurl }}">
-      <i class="fa fa-arrow-circle-o-left"></i> 
-      <span class="pagination-text">older posts</span>
-    </a>
+    <a class="pagination-item older" href="{{ paginator.next_page_path | absolute_url }}">Older</a>
   {% else %}
-    <span class="pagination-item">
-      <i class="fa fa-arrow-circle-o-left"></i> 
-      <span class="pagination-text">older posts</span>
-    </span>
+    <span class="pagination-item older">Older</span>
   {% endif %}
-
-  <!-- <a class="pagination-item" href="#">archive</a> -->
-
   {% if paginator.previous_page %}
-    <a class="pagination-item" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">
-      <span class="pagination-text">newer posts</span> 
-      <i class="fa fa-arrow-circle-o-right"></i>
-    </a>
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="{{ '/' | absolute_url }}">Newer</a>
+    {% else %}
+      <a class="pagination-item newer" href="{{ paginator.previous_page_path | absolute_url }}">Newer</a>
+    {% endif %}
   {% else %}
-    <span class="pagination-item">
-      <span class="pagination-text">newer posts</span> 
-      <i class="fa fa-arrow-circle-o-right"></i>
-    </span>
+    <span class="pagination-item newer">Newer</span>
   {% endif %}
 </div>
-
