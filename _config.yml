@@ -1,6 +1,6 @@
 title:               Josh Machado - My Research
-url:                 https://joshmachado.github.io/research_projects
-baseurl:             https://joshmachado.github.io/research_projects
+url:                 https://joshmachado.github.io/blog
+baseurl:             https://joshmachado.github.io/blog
 
 markdown:            kramdown
 highlighter:         rouge
