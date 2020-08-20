@@ -24,3 +24,4 @@ plugins:
   - jekyll-coffeescript
   - jekyll-paginate
   - jekyll-gist
+  - jekyll-redirect-from
