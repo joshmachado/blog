@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body>
+    <nav class="nav-main">
+      <ul>
+        <li class="hvr-underline-reveal"><a href="{{ site.baseurl }}/presentations/">presentations</a></li>
+        <li class="hvr-underline-reveal"><a href="http://joshmachado.github.io/cv">cv</a></li>
+        <li class="logo"><a class="hvr-ripple-out" href="http://joshmachado.github.io">J</a></li>
+        <li class="hvr-underline-reveal"><a href="{{ site.baseurl }}">research projects</a></li>
+        <li class="hvr-underline-reveal"><a href="http://joshmachado.github.io/blog/">blog</a></li>
+      </ul>
+    </nav>
+
+    <div class="container content">
+      <main>
+        {{ content }}
+      </main>
+
+      <footer class="footer">
+        <small>
+            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time> {{ site.author.name }}</span> &middot;
+            <span>Powered by <a href="http://jekyllrb.com/">Jekyll</a></span>
+        </small>
+        <div class="ftr-links">
+          <a href="https://github.com/joshmachado"><i class="fa fa-github"></i></a>
+          <a href="https://twitter.com/astronomerjosh"><i class="fa fa-twitter"></i></a>
+        </div>
+      </footer>
+    </div>
+
+  </body>
+</html>
