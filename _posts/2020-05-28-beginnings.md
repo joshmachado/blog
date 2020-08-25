@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 It's the summer before I start graduate school and I thought it would be helpful (and fun) to have a space to write down and share academic research endeavors and general thoughts.
 
