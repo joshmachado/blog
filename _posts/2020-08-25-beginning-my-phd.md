@@ -3,7 +3,7 @@ published: true
 ---
 ## Who let this happen?
 
-This is a strange time for a lot of reasons, on both a global and personal level. But, this week I started my PhD program and I'm really excited about all of it. I'm only a few days in but am starting the process of chosing my first year research project. I'm also looking forward to my first graduate research project, but I'm unsure how to choose.
+This is a strange time for a lot of reasons, on both a global and personal level. But, this week I started my PhD program and I'm really excited about all of it. I'm only a few days in but am starting the process of choosing my first year research project. I'm looking forward to it, but I'm unsure how to choose.
 
 ## What's better?
 
